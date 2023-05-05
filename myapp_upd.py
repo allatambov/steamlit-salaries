@@ -21,8 +21,12 @@ selected = st.sidebar.selectbox("Choose a variable", options)
 # add a field for the color of the graph (e.g. #346eeb)
 
 fill_color = st.sidebar.text_input("Enter a color:", 
-                           value = "#346eeb",
                            placeholder = "#346eeb")
+
+# if no color specified, set to #346eeb to avoid errors
+
+if fill_color == "":
+    fill_color = "#346eeb"
 
 # create a table with descriptive statistics
 
