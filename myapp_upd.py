@@ -45,7 +45,7 @@ else:
 # add two tabs, 1st with table of descriptives,     
 # 2nd with the graph
 
-col1, col2 = st.tabs(["Statistics", "Visualization"])
+tab1, tab2 = st.tabs(["Statistics", "Visualization"])
 
 with tab1:
     st.table(selected_table)
